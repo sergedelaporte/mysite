@@ -5,7 +5,7 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
-    var myLatlng = new google.maps.LatLng(48.4349102, -4.401793);
+    var myLatlng = new google.maps.LatLng(48,4349102, -4,401793);
     // 39.399872
     // -8.224454
     
@@ -35,7 +35,7 @@ function init() {
     for (var x = 0; x < addresses.length; x++) {
         $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
             var p = data.results[0].geometry.location
-            var latlng = new google.maps.LatLng(48.474409, -4.331345);
+            var latlng = new google.maps.LatLng(48,474409, -4,331345);
             new google.maps.Marker({
                 position: latlng,
                 map: map,
