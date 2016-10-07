@@ -7480,7 +7480,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fh5co-menu-btn {
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
   float: right;
@@ -7489,10 +7489,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #444;
 }
 .fh5co-menu-btn i {
-  font-size: 20px;
-  margin-top: 3px;
+  font-size: 30px;
+  margin-top: -3px;
   float: right;
-  margin-left: 10px;
+  margin-left: 3px;
 }
 .fh5co-menu-btn:hover, .fh5co-menu-btn:focus, .fh5co-menu-btn:active {
   outline: none;
