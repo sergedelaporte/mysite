@@ -49,7 +49,8 @@ function init() {
     var marker = new google.maps.Marker({
     position: new google.maps.LatLng(48.474409, -4.331345),
     map: map,
-    title:"Hello World !"
+    title:"Serge DELAPORTE"
+    icon: 'images/loc.png'
 });
 }
 google.maps.event.addDomListener(window, 'load', init);
