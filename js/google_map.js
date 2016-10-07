@@ -30,7 +30,7 @@ function init() {
     // Create the Google Map using out element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
     
-    var addresses = ['Brooklyn'];
+/*    var addresses = ['Brooklyn'];
 
     for (var x = 0; x < addresses.length; x++) {
         $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
@@ -44,6 +44,12 @@ function init() {
 
         });
     }
+    */
     
+    var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(48.474409, -4.331345),
+    map: map,
+    title:"Hello World !"
+});
 }
 google.maps.event.addDomListener(window, 'load', init);
