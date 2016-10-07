@@ -35,11 +35,11 @@ function init() {
     for (var x = 0; x < addresses.length; x++) {
         $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
             var p = data.results[0].geometry.location
-            var latlng = new google.maps.LatLng(48,474409, -4,331345);
+            var latlng = new google.maps.LatLng(48.474409, -4.331345);
             new google.maps.Marker({
                 position: latlng,
                 map: map,
-                icon: 'images/loc.png'
+                //icon: 'images/loc.png'
             });
 
         });
